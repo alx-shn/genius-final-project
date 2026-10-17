@@ -1,0 +1,74 @@
+@font-face {
+  font-display: swap;
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rowdies-v19-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/roboto-v51-latin-100.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v51-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/roboto-v51-latin-600.woff2") format("woff2");
+}
+
+:root {
+  --primary-black: #181817;
+  --primary-orange: #ff9f0e;
+  --primary-white: #ffffff;
+  --secondary-hover: #fcb62a;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--primary-black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rowdies", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  color: var(--primary-white);
+  background-color: var(--primary-orange);
+}
+
+.button:hover {
+  background-color: var(--secondary-hover);
+}
+
+.link {
+  color: var(--primary-black);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--primary-orange);
+}
