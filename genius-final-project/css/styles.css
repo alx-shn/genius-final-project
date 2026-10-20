@@ -28,6 +28,7 @@
   font-weight: 600;
   src: url("../fonts/roboto-v51-latin-600.woff2") format("woff2");
 }
+/* Змінні */
 
 :root {
   --primary-black: #181817;
@@ -36,10 +37,17 @@
   --secondary-hover: #fcb62a;
 }
 
+/* Базові */
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: var(--primary-black);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -55,6 +63,14 @@ ul {
   list-style-type: none;
 }
 
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Кнопки */
 .button {
   color: var(--primary-white);
   background-color: var(--primary-orange);
@@ -64,6 +80,7 @@ ul {
   background-color: var(--secondary-hover);
 }
 
+/* Посилання */
 .link {
   color: var(--primary-black);
   text-decoration: none;
@@ -71,4 +88,73 @@ ul {
 
 .link:hover {
   color: var(--primary-orange);
+}
+
+/* header */
+
+/* Hero-section */
+.hero-section {
+  padding-top: 292px;
+  padding-left: 100px;
+}
+
+.hero-title {
+  margin-bottom: 40px;
+}
+
+.hero-text {
+  margin-bottom: 24px;
+}
+
+/* walking-section */
+.walking-section {
+  padding-bottom: 32px;
+}
+
+.walking-title {
+  margin-bottom: 40px;
+}
+
+.walking-text {
+  margin-bottom: 24px;
+}
+
+/* services-section */
+.services-section {
+  padding-bottom: 96px;
+}
+
+/* customer-section */
+.customer-section {
+  padding-bottom: 168px;
+}
+
+.customer-title {
+  margin-bottom: 48px;
+}
+
+.customer-name {
+  margin-bottom: 8px;
+}
+
+.customer-text {
+  margin-bottom: 24px;
+}
+
+/* contact-section */
+
+.contact-section {
+  padding-bottom: 92px;
+}
+
+.contact-title {
+  margin-bottom: 16px;
+}
+
+.contact-text {
+  margin-bottom: 42px;
+}
+
+.contact-form {
+  margin-bottom: 24px;
 }

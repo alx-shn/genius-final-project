@@ -4,112 +4,138 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dog Club</title>
-    link
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="#"><img src="./images/hero-logo.svg" alt="Слід-собаки" /></a>
-        <ul>
-          <li><a class="link" href="#less-talk-section">Less talk</a></li>
-          <li>
-            <a class="link" href="#services-section">Services category</a>
-          </li>
-          <li><a class="link" href="#customer-section">Happy customer</a></li>
-          <li><a class="link" href="#contact-section">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- корзина для покупок -->
-      <button class="button" type="button">Contact us</button>
+      <div class="container">
+        <nav>
+          <a href="#"><img src="./images/hero-logo.svg" alt="Слід-собаки" /></a>
+          <ul>
+            <li><a class="link" href="#less-talk-section">Less talk</a></li>
+            <li>
+              <a class="link" href="#services-section">Services category</a>
+            </li>
+            <li><a class="link" href="#customer-section">Happy customer</a></li>
+            <li><a class="link" href="#contact-section">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- корзина для покупок -->
+        <button class="button" type="button">Contact us</button>
+      </div>
     </header>
     <main>
       <section class="hero-section">
-        <h1>Taking care for your Smart Dog!</h1>
-        <p>Human–canine bonding is the relationship between dogs and humans</p>
+        <div class="container">
+          <h1 class="hero-title">Taking care for your Smart Dog!</h1>
+          <p class="hero-text">
+            Human–canine bonding is the relationship between dogs and humans
+          </p>
+          <button class="button" type="button">Explore More</button>
+        </div>
+        <!-- <img src="./images/dog.png" alt="Happy Dog" /> -->
+      </section>
 
-        <button class="button" type="button">Explore More</button>
-        <img src="./images/dog.png" alt="Happy Dog" />
+      <section class="walking-section" id="less-talk-section">
+        <div class="container">
+          <h2 class="walking-title">Less talk and more walk</h2>
+          <p class="walking-text">
+            Sometimes our career, lifestyle, or routines can make it difficult
+            to provide your pet with the recommended amount of exercise that
+            they need. Which is why, it’s okay to use an extra hand in walking
+            dogs so they are in perfect shape, mentally and physically.
+          </p>
+          <button class="button" type="button">Explore More</button>
+        </div>
       </section>
-      <section id="less-talk-section">
-        <h2>Less talk and more walk</h2>
-        <p>
-          Sometimes our career, lifestyle, or routines can make it difficult to
-          provide your pet with the recommended amount of exercise that they
-          need. Which is why, it’s okay to use an extra hand in walking dogs so
-          they are in perfect shape, mentally and physically.
-        </p>
-        <button class="button" type="button">Explore More</button>
+
+      <section class="services-section" id="services-section">
+        <div class="container">
+          <h2 class="services-title">Services category</h2>
+          <a class="services-link" href="">more services</a>
+        </div>
       </section>
-      <section id="services-section">
-        <h2>Services category</h2>
-        <a href="">more services</a>
+
+      <section class="customer-section" id="customer-section">
+        <div class="container">
+          <h2 class="customer-title">Happy customer</h2>
+          <ul>
+            <li>
+              <article class="customer-card">
+                <img
+                  src="./images/customer-1.jpg"
+                  alt="Чоловік Крістіан з собакою Томом породи коргі на руках"
+                />
+                <h3 class="customer-name">Christin & Tom</h3>
+                <p class="customer-text">
+                  Love the overall workout experience!
+                </p>
+                <!-- індикатор відгуків -->
+                <p>5/5</p>
+              </article>
+            </li>
+            <li>
+              <article class="customer-card">
+                <img
+                  src="./images/customer-2.jpg"
+                  alt="Жінка Анна обіймає свою собаку Тоббі породи такса"
+                />
+                <h3 class="customer-name">Anna & Tobby</h3>
+                <p class="customer-text">
+                  Amazing Products & Delivery on time.
+                </p>
+                <!-- індикатор відгуків -->
+                <p>4/5</p>
+              </article>
+            </li>
+            <li>
+              <article class="customer-card">
+                <img
+                  src="./images/customer-3.jpg"
+                  alt="Дівчина Сінді з собакою Кітч породи бордер-коллі"
+                />
+                <h3 class="customer-name">Sindy & Kitch</h3>
+                <p class="customer-text">Great job with the trainer!</p>
+                <!-- індикатор відгуків -->
+                <p>5/5</p>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section id="customer-section">
-        <h2>Happy customer</h2>
-        <ul>
-          <li>
-            <article>
-              <img
-                src="./images/customer-1.jpg"
-                alt="Чоловік Крістіан з собакою Томом породи коргі на руках"
-              />
-              <h3>Christin & Tom</h3>
-              <p>Love the overall workout experience!</p>
-              <!-- індикатор відгуків -->
-              <p>5/5</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img
-                src="./images/customer-2.jpg"
-                alt="Жінка Анна обіймає свою собаку Тоббі породи такса"
-              />
-              <h3>Anna & Tobby</h3>
-              <p>Amazing Products & Delivery on time.</p>
-              <!-- індикатор відгуків -->
-              <p>4/5</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <img
-                src="./images/customer-3.jpg"
-                alt="Дівчина Сінді з собакою Кітч породи бордер-коллі"
-              />
-              <h3>Sindy & Kitch</h3>
-              <p>Great job with the trainer!</p>
-              <!-- індикатор відгуків -->
-              <p>5/5</p>
-            </article>
-          </li>
-        </ul>
-      </section>
-      <section id="contact-section">
-        <h2>Our experts will take care of your friend</h2>
-        <p>Fill out the form so we can contact you!</p>
-        <!-- контактна форма -->
-        <button class="button" type="submit">Contact us</button>
-        <!-- Чекбокс -->
+
+      <section class="contact-section" id="contact-section">
+        <div class="container">
+          <h2 class="contact-title">
+            Our experts will take care of your friend
+          </h2>
+          <p class="contact-text">Fill out the form so we can contact you!</p>
+          <form class="contact-form">Контактна форма</form>
+          <button class="button" type="submit">Contact us</button>
+          <!-- Чекбокс -->
+        </div>
       </section>
     </main>
     <footer>
-      <nav>
-        <a href="#"><img src="./images/hero-logo.svg" alt="Лапка собаки" /></a>
-        <!-- Інстаграм  -->
-        <!-- Фейсбук -->
-        <ul>
-          <li><a class="link" href="#less-talk-section">Less talk</a></li>
-          <li>
-            <a class="link" href="#services-section">Services category</a>
-          </li>
-          <li><a class="link" href="#customer-section">Happy customer</a></li>
-          <li><a class="link" href="#contact-section">Contact</a></li>
-        </ul>
-        <button class="button" type="submit">Contact us</button>
-        <!-- Чекбокс -->
-      </nav>
+      <div class="container">
+        <nav>
+          <a href="#"
+            ><img src="./images/hero-logo.svg" alt="Лапка собаки"
+          /></a>
+          <!-- Інстаграм  -->
+          <!-- Фейсбук -->
+          <ul>
+            <li><a class="link" href="#less-talk-section">Less talk</a></li>
+            <li>
+              <a class="link" href="#services-section">Services category</a>
+            </li>
+            <li><a class="link" href="#customer-section">Happy customer</a></li>
+            <li><a class="link" href="#contact-section">Contact</a></li>
+          </ul>
+          <button class="button" type="submit">Contact us</button>
+          <!-- Чекбокс -->
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
