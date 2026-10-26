@@ -35,6 +35,7 @@
   --primary-orange: #ff9f0e;
   --primary-white: #ffffff;
   --secondary-hover: #fcb62a;
+  --accent-orange: #ffaa00;
 }
 
 /* Базові */
@@ -46,6 +47,7 @@ body {
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
   margin: 0;
   padding: 0;
 }
@@ -70,17 +72,21 @@ ul {
   padding: 0 24px;
 }
 
-/* Кнопки */
+/* buttons */
 .button {
   color: var(--primary-white);
   background-color: var(--primary-orange);
+  border: 2px solid var(--primary-orange);
+  border-radius: 8px;
+  padding: 16px 32px;
+  cursor: pointer;
 }
 
 .button:hover {
   background-color: var(--secondary-hover);
 }
 
-/* Посилання */
+/* links */
 .link {
   color: var(--primary-black);
   text-decoration: none;
@@ -95,7 +101,64 @@ ul {
 
 /* header */
 
-/* Hero-section */
+.header {
+  padding-top: 32px;
+}
+
+.header-flexbox {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-icon {
+  fill: var(--accent-orange);
+}
+
+.text-logo {
+  font-family: "Rowdies", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  width: 100%;
+  max-width: 137px;
+}
+
+.text-logo span {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+/* hero-section */
 .hero-section {
   padding-top: 292px;
   padding-left: 100px;
@@ -123,10 +186,9 @@ ul {
 
 .walking-title {
   font-size: 56px;
-  line-height: 1.7;
+  line-height: 1.8;
   width: 100%;
   max-width: 428px;
-
   margin-bottom: 40px;
 }
 
@@ -135,7 +197,6 @@ ul {
   line-height: 1.5;
   width: 100%;
   max-width: 640px;
-
   margin-bottom: 24px;
 }
 
@@ -144,10 +205,12 @@ ul {
   padding-bottom: 96px;
 }
 
-.services-title {
+.services-title,
+.customer-title {
   font-size: 56px;
   line-height: 1.8;
   text-align: center;
+  margin-bottom: 48px;
 }
 
 .services-link {
@@ -159,20 +222,16 @@ ul {
   padding-bottom: 168px;
 }
 
-.customer-title {
-  font-size: 56px;
-  line-height: 1.8;
-  text-align: center;
-
-  margin-bottom: 48px;
-}
-
 .customer-name {
   margin-bottom: 8px;
 }
 
 .customer-text {
   margin-bottom: 24px;
+}
+
+.customer-counter {
+  font-size: 16px;
 }
 
 /* contact-section */
@@ -182,13 +241,23 @@ ul {
 }
 
 .contact-title {
-  margin-bottom: 16px;
+  font-size: 56px;
+  line-height: 1.8;
+  text-align: center;
+  width: 100%;
+  max-width: 605px;
+  margin: 0 auto 16px auto;
 }
 
 .contact-text {
   margin-bottom: 42px;
+  text-align: center;
 }
 
 .contact-form {
   margin-bottom: 24px;
+}
+
+.customer-counter {
+  color: var(--accent-orange);
 }

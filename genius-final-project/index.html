@@ -7,21 +7,39 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
-          <a href="#"><img src="./images/hero-logo.svg" alt="Слід-собаки" /></a>
-          <ul>
-            <li><a class="link" href="#less-talk-section">Less talk</a></li>
-            <li>
-              <a class="link" href="#services-section">Services category</a>
-            </li>
-            <li><a class="link" href="#customer-section">Happy customer</a></li>
-            <li><a class="link" href="#contact-section">Contact</a></li>
-          </ul>
-        </nav>
-        <!-- корзина для покупок -->
-        <button class="button" type="button">Contact us</button>
+        <div class="header-flexbox">
+          <nav class="header-nav">
+            <a class="header-logo" href="#"
+              ><svg class="header-icon" width="43" height="43">
+                <use href="./images/icons.svg#icon-logo"></use>
+              </svg>
+              <p class="text-logo">dog<span>club</span></p></a
+            >
+
+            <ul class="header-link">
+              <li><a class="link" href="#less-talk-section">Less talk</a></li>
+              <li>
+                <a class="link" href="#services-section">Services category</a>
+              </li>
+              <li>
+                <a class="link" href="#customer-section">Happy customer</a>
+              </li>
+              <li><a class="link" href="#contact-section">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <a href="">
+              <svg class="header-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-basket"></use>
+              </svg>
+            </a>
+
+            <button class="button" type="button">Contact us</button>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -71,7 +89,7 @@
                   Love the overall workout experience!
                 </p>
                 <!-- індикатор відгуків -->
-                <p>5/5</p>
+                <p class="customer-counter">5/5</p>
               </article>
             </li>
             <li>
@@ -85,7 +103,7 @@
                   Amazing Products & Delivery on time.
                 </p>
                 <!-- індикатор відгуків -->
-                <p>4/5</p>
+                <p class="customer-counter">4/5</p>
               </article>
             </li>
             <li>
@@ -97,7 +115,7 @@
                 <h3 class="customer-name">Sindy & Kitch</h3>
                 <p class="customer-text">Great job with the trainer!</p>
                 <!-- індикатор відгуків -->
-                <p>5/5</p>
+                <p class="customer-counter">5/5</p>
               </article>
             </li>
           </ul>
@@ -119,9 +137,8 @@
     <footer>
       <div class="container">
         <nav>
-          <a href="#"
-            ><img src="./images/hero-logo.svg" alt="Лапка собаки"
-          /></a>
+          <!-- Логотип -->
+
           <!-- Інстаграм  -->
           <!-- Фейсбук -->
           <ul>
